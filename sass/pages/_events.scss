@@ -1,0 +1,158 @@
+#venues {
+	background-color: $white;
+}
+h1 {
+	font-size: 55px;
+	line-height: 68px;
+	color: $umd_red;
+
+	@include breakpoint(screen-md) {
+		font-size: 42px;
+		line-height: 55px;
+	}
+	@include breakpoint(screen-sm) {
+		font-size: 34px;
+		line-height: 42px;
+	}
+	@include breakpoint(screen-xs) {
+		font-size: 26px;
+		line-height: 34px;
+	}
+}
+h2 {
+	font-size: 42px;
+	line-height: 55px;
+
+	@include breakpoint(screen-md) {
+		font-size: 34px;
+		line-height: 42px;
+	}
+	@include breakpoint(screen-sm) {
+		font-size: 26px;
+		line-height: 34px;
+	}
+	@include breakpoint(screen-xs) {
+		font-size: 21px;
+		line-height: 26px;
+	}
+
+}
+h3 {
+	font-size: 26px;
+	line-height: 34px;
+
+	@include breakpoint(screen-md) {
+		font-size: 21px;
+		line-height: 26px;
+	}
+	@include breakpoint(screen-sm) {
+		font-size: 16px;
+		line-height: 21px;
+	}
+	@include breakpoint(screen-xs) {
+		font-size: 16px !important;
+		line-height: 21px !important;
+	}
+}
+.icon-section {
+    margin-top: -80px;
+
+    > img {
+		@include breakpoint(screen-md) { width: 50%; }
+	    @include breakpoint(screen-sm) { width: 50%; }
+	    @include breakpoint(screen-xs) { width: 50%; }
+    }
+}
+
+.venue {
+	.text {
+		h1 {
+			font-size: 110px;
+		    line-height: 89px;
+
+			@include breakpoint(screen-lg) {
+				font-size: 89px;
+				line-height: 68px;
+			}
+			@include breakpoint(screen-md) {
+				font-size: 68px;
+				line-height: 55px;
+			}
+			@include breakpoint(screen-sm) {
+				font-size: 55px;
+				line-height: 42px;
+			}
+			@include breakpoint(screen-xs) {
+				font-size: 42px;
+				line-height: 34px;
+			}
+	    }
+
+		.loc {
+		    font-weight: 900;
+		    margin-bottom: 60px;
+		    margin-top: 0;
+
+		    
+		}
+		.date {
+		    font-weight: 100;
+		}
+	}
+}
+
+.accordion {
+	.accordion-item {
+		
+		a {
+			display: block;
+			background-size: cover;
+			background-position: 50% 50%;
+			border: none;
+			padding: 3em;
+			
+			@include breakpoint(screen-sm) { padding: 1.25em; }
+		    @include breakpoint(screen-xs) { padding: 1.25em; }
+
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.feature-button {
+    background-color: rgba(0,0,0,0.2);
+    border: 2px solid #ffffff;
+    color: #ffffff !important;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-size: 21px;
+    line-height: 26px;
+
+    @include breakpoint(screen-sm) {
+		font-size: 16px;
+		line-height: 21px;
+	}
+	@include breakpoint(screen-xs) {
+		font-size: 16px;
+		line-height: 21px;
+	}
+
+    &:hover, &:focus {
+		background-color: #fff !important;
+		color: #434A4F !important;
+		border: 2px solid #ffffff;
+		opacity: 0.8;
+    }
+}
+
+.well {
+	margin-bottom: 0px;
+	background-color: $umd_offwhite;
+	border: none;
+	border-radius: 0;
+}
+
+// 

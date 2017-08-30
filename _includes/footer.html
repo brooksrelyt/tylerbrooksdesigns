@@ -1,0 +1,64 @@
+    <footer class="footer bg-grey">
+        <div class="footer-inner">
+            <div class="grid-3 columns">
+                <p><strong><a href="{{ site.baseurl }}">Tyler Brooks Designs</a></strong></p>
+                <p>FREE Design Resources / Portfolio</p>
+                <p>Web + Graphic + Design</p>
+                <p>&nbsp;</p>
+                <p><strong><a href="mailto:brooksrelyt@gmail.com">brooksrelyt@gmail.com</a></strong></p>
+                <p>&copy; 2013<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Tyler Brooks</p>
+            </div>
+
+            <div class="grid-6 columns">
+                <div class="footer-menu">
+                    <ul class="footer-menu-inner">
+                        <li><a href="{{ site.baseurl }}" title="View projects"><span>01.</span> Showcase</a></li>
+                        <li><a href="{{ site.baseurl }}/about/" title="About Me"><span>02.</span> About</a></li>
+                        <li><a href="{{ site.baseurl }}/contact/" title="Contact Me"><span>03.</span> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid-3 columns">
+                <div class="social">
+                    <a target="_blank" href="https://www.instagram.com/brooksrelyts/"><span class="icon-instagram"></span></a>
+                    <a target="_blank" href="http://codepen.io/brooksrelyt/"><span class="icon-codepen2"></span></a>
+                    <a target="_blank" href="http://www.linkedin.com/pub/tyler-brooks/68/4a9/a4b"><span class="icon-linkedin2"></span></a>
+                    <a target="_blank" href="http://www.behance.net/TylerBrooksDesigns"><span class="icon-behance"></span></a>
+                </div>
+            </div>
+        </div>
+        <section class="sharing-container">
+            <div class="sharing-container-inner">
+                <div class="fb-share-button" data-href="http://tylerbrooksdesigns.com/" data-layout="button_count"></div>
+                <div class="g-plus plus" data-action="share" data-annotation="bubble" data-href="http://tylerbrooksdesigns.com/"> </div>
+                <div><a class="twitter-share-button" data-hashtags="tylerbrooksdesigns" data-text="FREE Design Resources / Portfolio" data-url="http://goo.gl/UCmeXP" data-via="brooksrelyt" href="https://twitter.com/share">Tweet</a></div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="{{ site.baseurl }}/js/vendor/jquery-2.1.1.js"></script>
+    <script src="{{ site.baseurl }}/js/brooks.app.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/walkway.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/masonry.min.js"></script>
+
+    {% if page.layout == 'index' %}
+    <script>
+        $(function() {
+            var container = document.querySelector('#container');
+            var msnry = new Masonry( container, {
+                columnWidth: '.grid-sizer'
+            });
+        });
+    </script>
+    {% endif %}
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TFW32K"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TFW32K');</script>
+    <!-- End Google Tag Manager -->

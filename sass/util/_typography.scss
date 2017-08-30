@@ -1,0 +1,83 @@
+p {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 2em;
+    margin-bottom: 1.25em;
+    text-rendering: optimizeLegibility;
+}
+/* Header styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #2985f4;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
+    text-rendering: optimizeLegibility; 
+}
+h1 {
+    font-size: 34px;
+    line-height: 40px;
+}
+
+h2 {    
+    font-size: 24px; 
+    line-height: 32px;
+}
+
+h3 {
+    font-size: 20px; 
+    line-height: 30px;
+}
+
+h4 {
+    font-size: 18px; 
+    line-height: 28px;
+}
+
+h5 {
+    font-size: 16px; 
+    line-height: 24px;
+}
+
+h6 {
+    font-size: 14px; 
+    line-height: 24px;
+}
+
+.subheader {
+    line-height: 1.4;
+    color: #b0b0b0;
+/*font-weight: normal;*/
+font-weight: 300;
+margin-top: 0.2rem;
+margin-bottom: 0.5rem; 
+}
+
+small {
+    font-size: 12px !important;
+    color: #666666;
+}
+
+.small {
+    color: #2985f4;
+    font-weight: 400;
+    font-size: 80%;
+    line-height: 1.4;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+// Text Transforms
+.uppercase {text-transform: uppercase;}
+
+// Text Colors
+.white { color: $white; }
+
+// Text Effects
+.shadow {
+    -webkit-text-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+    -moz-text-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+}

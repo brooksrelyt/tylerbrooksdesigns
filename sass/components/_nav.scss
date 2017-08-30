@@ -1,0 +1,433 @@
+.nav-position {
+    position: relative;
+    
+    .nav-position-inner {
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+// Navbar
+.navbar {
+    z-index: 16;
+    position: relative;
+    /*padding: 2.5rem 0;*/
+    margin-bottom: 0;
+
+    @include breakpoint(screen-xl) {
+
+    }
+    @include breakpoint(screen-lg) {
+
+    }
+    @include breakpoint(screen-md) {
+
+    }
+    @include breakpoint(screen-sm) {
+
+    }
+    @include breakpoint(screen-xs) {
+
+    }
+
+    li > a {
+        padding: 0;
+    }
+
+    .navbar-top {
+        padding: 3rem 0 1.5rem 0;
+        margin-bottom: 1.5rem;
+        border-bottom: 3px solid $white;
+
+/*        @include breakpoint(screen-sm) { border-bottom: none; }
+        @include breakpoint(screen-xs) { border-bottom: none; }*/
+        
+        .navbar-right {
+            margin-right: 0;
+        }
+    }
+}
+
+.navbar-header {
+    @include breakpoint(screen-xl) { display: block; }
+    @include breakpoint(screen-lg) { display: block; }
+    @include breakpoint(screen-md) { display: block; }
+    @include breakpoint(screen-sm) { margin: 0 auto; text-align: center; }
+    @include breakpoint(screen-xs) { margin: 0 auto; text-align: center; }
+
+    .btn {
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+}
+
+.navbar-default {
+    border: none;
+}
+
+.nav-feature {
+    @include breakpoint(screen-xl) { display: block; }
+    @include breakpoint(screen-lg) { display: block; }
+    @include breakpoint(screen-md) { display: block; }
+    @include breakpoint(screen-sm) { display: none; }
+    @include breakpoint(screen-xs) { display: none; }
+
+    .nav-feature-btn {
+        font-size: 13px;
+        line-height: 57px;
+        text-transform: uppercase;
+        width: 225px;
+        text-align: center;
+        vertical-align: middle;
+
+        @include breakpoint(screen-lg) {
+            &:nth-child(1) {
+                display: none;
+            } 
+        }
+        @include breakpoint(screen-md) {
+            &:nth-child(-n+2) {
+                display: none;
+            } 
+        }
+        
+        a {
+            padding: 0.7rem 3rem !important;
+            color: $white;
+            border: 1px solid $white;
+            margin: 0 1rem;
+
+            &:hover, &:focus {
+                background-color: $umd_red !important;
+                border-color: $umd_red;
+            }
+        }
+
+        
+
+    }
+
+    & li:last-child a {
+        background-color: $red;
+        border: 1px solid $red;
+        margin: 0 0 0 1rem;
+
+        &:hover, &:focus {
+            background-color: $darkred !important;
+            border: 1px solid $darkred;
+        }
+
+        &:active {
+            background-color: $darkred !important;
+            border: 1px solid $darkred;
+        }
+    }
+}
+
+.navbar-default {
+    background-color: transparent;
+
+    .navbar-bottom {
+        margin: 0.5rem 0;
+        width: 100%;
+
+        @include breakpoint(screen-sm) {
+            background-color: $umd_offwhite;
+            margin: 0;
+            padding: 0;
+            padding-top: 44px;
+            top: -44px;
+            position: relative;
+
+        }
+        @include breakpoint(screen-xs) {
+            background-color: $umd_offwhite;
+            margin: 0;
+            padding: 0;
+            padding-top: 44px;
+            top: -44px;
+            position: relative;
+        }
+
+        .navbar-nav {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            font-size: 13px;
+
+            @include breakpoint(screen-sm) {
+                margin: 0;
+                padding: 0;
+                
+            }
+            @include breakpoint(screen-xs) {
+                margin: 0;
+                padding: 0;
+            }
+
+            a {
+                color: $white;
+                text-decoration: none;
+                list-style-type: none;
+                text-transform: uppercase;
+                display: inline-block;
+                letter-spacing: 1px;
+
+                @include breakpoint(screen-sm) {
+                    color: $umd_red !important;
+                    font-size: 21px;
+                    line-height: 26px;
+                    width: 100%;
+                    padding: 1rem 1.5rem;
+                    text-transform: none;
+                    font-weight: 300;
+                }
+
+                @include breakpoint(screen-xs) {
+                    color: $umd_red !important;
+                    font-size: 21px;
+                    line-height: 26px;
+                    width: 100%;
+                    padding: 1rem 1.5rem;
+                    text-transform: none;
+                    font-weight: 300;
+                }
+
+                &:hover, &:focus {
+                    text-decoration: underline;
+                    color: $white;
+                    /*background-color: red;*/
+
+                    @include breakpoint(screen-sm) {
+                        text-decoration: none;
+                        background-color: $umd_silver;
+                        color: $white;
+                    }
+                    @include breakpoint(screen-xs) {
+                        text-decoration: none;
+                        background-color: $umd_silver;
+                        color: $white;
+                    }
+                }
+
+                
+            }
+
+            > li {
+                float: none;
+                display: inline-block;
+
+                @include breakpoint(screen-sm) {
+                    width: 100%;
+                    border-bottom: 1px solid $umd_midgray;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+                @include breakpoint(screen-xs) {
+                    width: 100%; 
+                    border-bottom: 1px solid $umd_midgray;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            > li + li {
+                margin-left: 6rem;
+
+                @include breakpoint(screen-sm) {
+                    margin-left: 0 !important;
+                }
+                @include breakpoint(screen-xs) {
+                    margin-left: 0 !important;
+                }
+
+                /*&:before {
+                    content: "/";
+                    color: $white;
+                    margin-right: 3rem;
+                    float: left;
+
+                    @include breakpoint(screen-sm) {
+                        content: none;
+                        margin-left: 0 !important;
+                    }
+                    @include breakpoint(screen-xs) {
+                        content: none; 
+                        margin-left: 0 !important;
+                    }
+                }*/
+            }
+        }
+    }
+}
+
+.nav-feature-btn {
+    .dropdown-menu {
+        margin-top: 0 !important;
+        transform: initial !important;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.navbar-toggle {
+    width: 100%;
+/*    width: calc(50% - 25px);
+    width: -o-calc(50% - 25px);
+    width: -ms-calc(50% - 25px);
+    width: -moz-calc(50% - 25px);
+    width: -webkit-calc(50% - 25px);*/
+
+    border-color: $white !important;
+    border-radius: 0;
+    margin: 0;
+    z-index: 1;
+
+    &:hover, &:focus {
+        background-color: $umd_red !important;
+        border-color: $umd_red !important;
+    }
+
+    .ham-label {
+        width: 85%;
+        position: absolute;
+        text-align: center;
+
+        span {
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            line-height: 24px;
+        }
+    }
+
+    .ham-bars {
+        float: right;
+        padding: 5px;
+
+        .icon-bar {
+            background-color: $white !important;
+        }
+    }
+    
+}
+
+.small-only {
+    display: none;
+
+    @include breakpoint(screen-xl) { display: none; }
+    @include breakpoint(screen-lg) { display: none; }
+    @include breakpoint(screen-md) { display: none; }
+
+    @include breakpoint(screen-sm) { 
+        display: block; 
+        border-bottom: 3px solid $umd_midgray; 
+
+        &.navbar-nav {
+            padding-bottom: 1rem !important;
+        }
+    }
+    @include breakpoint(screen-xs) { 
+        display: block; 
+        border-bottom: 3px solid $umd_midgray; 
+        
+        &.navbar-nav {
+            padding-bottom: 1rem !important; 
+        }
+    }
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin-top: 1em !important;
+    -o-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    left: 50%;
+    /*right: auto;*/
+
+    &::after, &::before {
+        bottom: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    
+    &::after {
+        border-color: rgba(136, 183, 213, 0);
+        border-width: 10px;
+        margin-left: -10px;
+
+        @include breakpoint(screen-md) { display: none; }
+        @include breakpoint(screen-sm) { display: none; }
+        @include breakpoint(screen-xs) { display: none; }
+    }
+
+    &::before {
+        border-bottom-color: $white;
+        border-width: 12px;
+        margin-left: -12px;
+
+        @include breakpoint(screen-md) { display: none; }
+        @include breakpoint(screen-sm) { display: none; }
+        @include breakpoint(screen-xs) { display: none; }
+    }
+
+    li {
+        a {
+            color: $umd_red !important;
+            padding: 1em 2em;
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent !important;
+  color: $umd_red !important;
+}
+
+.navbar-nav {
+    .open {
+        .dropdown-menu {
+            @include breakpoint(screen-md) { position: relative; }
+            @include breakpoint(screen-sm) { position: relative; }
+            @include breakpoint(screen-xs) { position: relative; }
+        }
+    }
+}
+
+a.dropdown-toggle {
+    @include breakpoint(screen-md) { background-color: $umd_silver !important; }
+    @include breakpoint(screen-sm) { background-color: $umd_silver !important; }
+    @include breakpoint(screen-xs) { background-color: $umd_silver !important; }
+
+    &:focus {
+        color: #ffffff !important;
+    }
+}
+
+.sub-nav {
+    @include breakpoint(screen-sm) { background-color: $umd_silver !important; }
+    @include breakpoint(screen-xs) { background-color: $umd_silver !important; }
+}
+
+
