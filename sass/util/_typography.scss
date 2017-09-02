@@ -4,6 +4,7 @@ p {
     line-height: 2em;
     margin-bottom: 1.25em;
     text-rendering: optimizeLegibility;
+    font-weight: 300;
 }
 /* Header styles */
 h1, h2, h3, h4, h5, h6 {
@@ -80,4 +81,12 @@ small {
     -webkit-text-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
     -moz-text-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
     text-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+}
+
+// Specific font face info 
+.pacifico {
+    font-family: 'pacificoregular';
+    color: #ffffff;
+    font-size: 2em;
+    line-height: 1em;
 }

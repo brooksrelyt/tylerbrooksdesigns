@@ -1,3 +1,7 @@
+// BOOTSTRAP - Use 'app' to adjust/overwrite bootstrap styles
+// !!! Do not change any styles inside default bootstrap files
+@import "bootstrap";
+
 @import "variables";
 @import "normalize";
 @import "mixins";
@@ -6,6 +10,7 @@
 
 // UTILITIES - Self-contained utilities
 @import "util/typography";
+@import "util/animations";
 
 // COMPONENTS - Self-contained components
 @import "components/nav";
