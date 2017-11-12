@@ -82,18 +82,22 @@
     margin-right: auto;
     max-width: 1260px;
     position: relative;
+
+    .sharing-container-inner {
+        bottom: 0;
+        float: right;
+        margin: 5px;
+        vertical-align: top;
+
+        div {
+            display: inline-block;
+            margin: 0 10px !important;
+            vertical-align: top;
+        }
+    }
 }
-.sharing-container-inner {
-    bottom: 0;
-    float: right;
-    margin: 5px;
-    vertical-align: top;
-}
-.sharing-container-inner div {
-    display: inline-block;
-    margin: 0 10px !important;
-    vertical-align: top;
-}
+
+.sharing-container-inner 
 .fb-share-button > span {
   vertical-align: top !important;
 }

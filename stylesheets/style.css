@@ -15308,23 +15308,22 @@ a.dropdown-toggle:focus {
   max-width: 1260px;
   position: relative;
 }
-
 /* line 86, ../sass/components/_footer.scss */
-.sharing-container-inner {
+.sharing-container .sharing-container-inner {
   bottom: 0;
   float: right;
   margin: 5px;
   vertical-align: top;
 }
-
 /* line 92, ../sass/components/_footer.scss */
-.sharing-container-inner div {
+.sharing-container .sharing-container-inner div {
   display: inline-block;
   margin: 0 10px !important;
   vertical-align: top;
 }
 
-/* line 97, ../sass/components/_footer.scss */
+/* line 100, ../sass/components/_footer.scss */
+.sharing-container-inner
 .fb-share-button > span {
   vertical-align: top !important;
 }
