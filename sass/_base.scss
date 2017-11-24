@@ -53,7 +53,9 @@ Scroll Bar style
   background-color: white;
   color: #111;
 }
-
+.uppercase {
+    text-transform: uppercase !important;
+}
 .special {
     width: 243px;
 }
@@ -1859,67 +1861,7 @@ Animations
 }
 
 /* hero image */
-.full-width {
-  width: 100%;
-    background-repeat:no-repeat;
-    background-position:50% 50%;
-    background-position:50% 50%\9 !important;
-    background-size: cover;
-}
-.full-width,
-.bg-content {
-    width:100%;
-    min-height:100%;
-}
-.full-home {
-  width: 100%;
-    background-repeat:no-repeat;
-    background-position:50% 50%;
-    background-position:50% 50%\9 !important;
-    background-size: cover;
-}
-.full-home,
-.bg-content {
-    width:100%;
-    min-height:80%;
-}
-.bg-content {
-    display:table;
-    color: #fff;
-}
-.bg-inner-content {
-    display:table-cell;
-    position:relative;
-    vertical-align:middle;
-    text-align:center;
-    position: absolute;
-    top: 25%;
-    left: 0;
-    right: 0;
-    /*max-width: 800px;*/
-    margin: 0 auto;
-}
-.not-full,
-.not-full .bg-content,
-.full-width.not-overflow,
-.full-width.not-overflow .bg-content {
-    height:100%;
-    overflow:hidden;
-}
-.not-full {
-    height:65%;
-}
 
-.not-full-2,
-.not-full-2 .bg-content,
-.full-width.not-overflow,
-.full-width.not-overflow .bg-content {
-    height:100%;
-    overflow:hidden;
-}
-.not-full-2 {
-    height:400px;
-}
 
 /*@-webkit-keyframes hero-down-anim {
   0%{ top: -7px; }
@@ -2841,58 +2783,12 @@ a.brand {
 Video Header Styles
 
 -------------------------------- */
-.hero-wrapper {
-    height: 65%;
-    position: relative;
-    margin: 0;
-    box-sizing: border-box;
-    background: fixed;
-}
-#hero {
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-    background-color: #666666;
-}
-#video {
-    /*bottom: 0;*/
-    bottom: -250px;
-    position: absolute;
-    width: 100%;
-}
-.h-textarea {
-    position: absolute;
-    top: 250px;
-    width: 100%;
-    padding: 0 50px;
-}
-.h-textarea-inner {
-    display: block;
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-.textarea-intro {
-    padding-bottom:90px;
-    vertical-align: middle;
-}
-.textarea-intro img {
-    max-width: 450px;
-}
-.small-banner {
-    display: none;
-}
-.uppercase {
-    text-transform: uppercase !important;
-}
-.large {
-    font-size: 56px !important;
-    font-weight: 300;
-}
+
+
+
+
+
+
 .bottom-bar {
     background: #f1f1f1 none repeat scroll 0 0;
     height: 65px;
@@ -2922,13 +2818,7 @@ Video Header Styles
     color: #fff;
 }
 
-@media screen and (max-width: 1275px) {
-    #video {
-        bottom: 0;
-        position: absolute;
-        width: 100%;
-    }
-}
+
 
 /*==============  media  ==============*/
 
