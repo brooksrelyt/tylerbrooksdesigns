@@ -18,6 +18,22 @@
             display: inline-block;
             margin-right: 30px;
 
+            @include breakpoint(screen-lg) {
+                
+            }
+            @include breakpoint(screen-md) {
+                display: block;
+                margin-right: 0;
+            }
+            @include breakpoint(screen-sm) {
+                display: block;
+                margin-right: 0;
+            }
+            @include breakpoint(screen-xs) {
+                display: block;
+                margin-right: 0;
+            }
+
             a {
                 font-size: 12px;
                 letter-spacing: 2px;
@@ -40,6 +56,38 @@
         max-width: 1260px;
         position: relative;
 
+        @include breakpoint(screen-lg) {
+            text-align: center;
+        }
+        @include breakpoint(screen-md) {
+            text-align: center;
+        }
+        @include breakpoint(screen-sm) {
+            text-align: center;
+        }
+        @include breakpoint(screen-xs) {
+            text-align: center;
+        }
+
+        .footer-menu {
+            @include breakpoint(screen-lg) {
+                margin-top: 1.5em;
+                text-align: center;
+            }
+            @include breakpoint(screen-md) {
+                margin-top: 1.5em;
+                text-align: center;
+            }
+            @include breakpoint(screen-sm) {
+                margin-top: 1.5em;
+                text-align: center;
+            }
+            @include breakpoint(screen-xs) {
+                margin-top: 1.5em;
+                text-align: center;
+            }
+        }
+
         &::after {
             clear: both;
             content: " ";
@@ -50,6 +98,21 @@
 
 .footer .social {
     text-align: right;
+
+    @include breakpoint(screen-lg) {
+        text-align: center;
+        margin-top: 3em;
+    }
+    @include breakpoint(screen-md) {
+        margin-top: 3em;
+        text-align: center;
+    }
+    @include breakpoint(screen-sm) {
+        text-align: center;
+    }
+    @include breakpoint(screen-xs) {
+        text-align: center;
+    }
 }
 .footer .social a {
     display: inline-block;

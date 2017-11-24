@@ -15080,7 +15080,28 @@ a.dropdown-toggle:focus {
   display: inline-block;
   margin-right: 30px;
 }
-/* line 21, ../sass/components/_footer.scss */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 17, ../sass/components/_footer.scss */
+  .footer ul li {
+    display: block;
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  /* line 17, ../sass/components/_footer.scss */
+  .footer ul li {
+    display: block;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 17, ../sass/components/_footer.scss */
+  .footer ul li {
+    display: block;
+    margin-right: 0;
+  }
+}
+/* line 37, ../sass/components/_footer.scss */
 .footer ul li a {
   font-size: 12px;
   letter-spacing: 2px;
@@ -15089,31 +15110,109 @@ a.dropdown-toggle:focus {
   font-weight: bold;
   /*transition: color 300ms ease 0s, border 300ms ease 0s;*/
 }
-/* line 29, ../sass/components/_footer.scss */
+/* line 45, ../sass/components/_footer.scss */
 .footer ul li a span {
   color: #666666;
   margin-right: 10px;
 }
-/* line 37, ../sass/components/_footer.scss */
+/* line 53, ../sass/components/_footer.scss */
 .footer .footer-inner {
   margin-left: auto;
   margin-right: auto;
   max-width: 1260px;
   position: relative;
 }
-/* line 43, ../sass/components/_footer.scss */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 53, ../sass/components/_footer.scss */
+  .footer .footer-inner {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 53, ../sass/components/_footer.scss */
+  .footer .footer-inner {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  /* line 53, ../sass/components/_footer.scss */
+  .footer .footer-inner {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 53, ../sass/components/_footer.scss */
+  .footer .footer-inner {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 72, ../sass/components/_footer.scss */
+  .footer .footer-inner .footer-menu {
+    margin-top: 1.5em;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 72, ../sass/components/_footer.scss */
+  .footer .footer-inner .footer-menu {
+    margin-top: 1.5em;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  /* line 72, ../sass/components/_footer.scss */
+  .footer .footer-inner .footer-menu {
+    margin-top: 1.5em;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 72, ../sass/components/_footer.scss */
+  .footer .footer-inner .footer-menu {
+    margin-top: 1.5em;
+    text-align: center;
+  }
+}
+/* line 91, ../sass/components/_footer.scss */
 .footer .footer-inner::after {
   clear: both;
   content: " ";
   display: block;
 }
 
-/* line 51, ../sass/components/_footer.scss */
+/* line 99, ../sass/components/_footer.scss */
 .footer .social {
   text-align: right;
 }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 99, ../sass/components/_footer.scss */
+  .footer .social {
+    text-align: center;
+    margin-top: 3em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 99, ../sass/components/_footer.scss */
+  .footer .social {
+    margin-top: 3em;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  /* line 99, ../sass/components/_footer.scss */
+  .footer .social {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 99, ../sass/components/_footer.scss */
+  .footer .social {
+    text-align: center;
+  }
+}
 
-/* line 54, ../sass/components/_footer.scss */
+/* line 117, ../sass/components/_footer.scss */
 .footer .social a {
   display: inline-block;
   margin-right: 20px;
@@ -15122,7 +15221,7 @@ a.dropdown-toggle:focus {
   text-decoration: none;
 }
 
-/* line 61, ../sass/components/_footer.scss */
+/* line 124, ../sass/components/_footer.scss */
 .footer .social a span {
   background: #2985f4 none repeat scroll 0 0;
   border-radius: 100%;
@@ -15135,18 +15234,18 @@ a.dropdown-toggle:focus {
   width: 30px;
 }
 
-/* line 72, ../sass/components/_footer.scss */
+/* line 135, ../sass/components/_footer.scss */
 .footer .social a:last-child {
   margin-right: 0;
 }
 
-/* line 75, ../sass/components/_footer.scss */
+/* line 138, ../sass/components/_footer.scss */
 .footer .social a:hover span {
   background: #2270cf;
   color: white;
 }
 
-/* line 79, ../sass/components/_footer.scss */
+/* line 142, ../sass/components/_footer.scss */
 .sharing-container {
   bottom: -80px;
   margin-left: auto;
@@ -15154,21 +15253,21 @@ a.dropdown-toggle:focus {
   max-width: 1260px;
   position: relative;
 }
-/* line 86, ../sass/components/_footer.scss */
+/* line 149, ../sass/components/_footer.scss */
 .sharing-container .sharing-container-inner {
   bottom: 0;
   float: right;
   margin: 5px;
   vertical-align: top;
 }
-/* line 92, ../sass/components/_footer.scss */
+/* line 155, ../sass/components/_footer.scss */
 .sharing-container .sharing-container-inner div {
   display: inline-block;
   margin: 0 10px !important;
   vertical-align: top;
 }
 
-/* line 100, ../sass/components/_footer.scss */
+/* line 163, ../sass/components/_footer.scss */
 .sharing-container-inner
 .fb-share-button > span {
   vertical-align: top !important;
@@ -15226,7 +15325,7 @@ a.dropdown-toggle:focus {
   line-height: 43px;
   white-space: nowrap;
   position: absolute;
-  bottom: 30px;
+  bottom: 23px;
   left: 50%;
   font-size: 12px;
   font-weight: 700;
@@ -15409,19 +15508,30 @@ a.dropdown-toggle:focus {
 .h-textarea .h-textarea-inner .textarea-intro h1 {
   line-height: 56px;
   font-size: 56px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  margin-top: 0;
+  letter-spacing: 1px;
 }
-/* line 214, ../sass/components/_banner.scss */
+/* line 215, ../sass/components/_banner.scss */
+.h-textarea .h-textarea-inner .textarea-intro h5 {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+/* line 219, ../sass/components/_banner.scss */
+.h-textarea .h-textarea-inner .textarea-intro h6 {
+  letter-spacing: 1px;
+}
+/* line 223, ../sass/components/_banner.scss */
 .h-textarea .h-textarea-inner .textarea-intro img {
   max-width: 450px;
 }
 
-/* line 221, ../sass/components/_banner.scss */
+/* line 230, ../sass/components/_banner.scss */
 .small-banner {
   display: none;
 }
 
-/* line 225, ../sass/components/_banner.scss */
+/* line 234, ../sass/components/_banner.scss */
 .full-width {
   width: 100%;
   background-repeat: no-repeat;
@@ -15430,14 +15540,14 @@ a.dropdown-toggle:focus {
   background-size: cover;
 }
 
-/* line 232, ../sass/components/_banner.scss */
+/* line 241, ../sass/components/_banner.scss */
 .full-width,
 .bg-content {
   width: 100%;
   min-height: 100%;
 }
 
-/* line 237, ../sass/components/_banner.scss */
+/* line 246, ../sass/components/_banner.scss */
 .full-home {
   width: 100%;
   background-repeat: no-repeat;
@@ -15446,20 +15556,20 @@ a.dropdown-toggle:focus {
   background-size: cover;
 }
 
-/* line 244, ../sass/components/_banner.scss */
+/* line 253, ../sass/components/_banner.scss */
 .full-home,
 .bg-content {
   width: 100%;
   min-height: 100%;
 }
 
-/* line 249, ../sass/components/_banner.scss */
+/* line 258, ../sass/components/_banner.scss */
 .bg-content {
   display: table;
   color: #fff;
 }
 
-/* line 253, ../sass/components/_banner.scss */
+/* line 262, ../sass/components/_banner.scss */
 .bg-inner-content {
   display: table-cell;
   position: relative;
@@ -15473,7 +15583,7 @@ a.dropdown-toggle:focus {
   margin: 0 auto;
 }
 
-/* line 265, ../sass/components/_banner.scss */
+/* line 274, ../sass/components/_banner.scss */
 .not-full,
 .not-full .bg-content,
 .full-width.not-overflow,
@@ -15482,12 +15592,12 @@ a.dropdown-toggle:focus {
   overflow: hidden;
 }
 
-/* line 272, ../sass/components/_banner.scss */
+/* line 281, ../sass/components/_banner.scss */
 .not-full {
   height: 65%;
 }
 
-/* line 276, ../sass/components/_banner.scss */
+/* line 285, ../sass/components/_banner.scss */
 .not-full-2,
 .not-full-2 .bg-content,
 .full-width.not-overflow,
@@ -15496,7 +15606,7 @@ a.dropdown-toggle:focus {
   overflow: hidden;
 }
 
-/* line 283, ../sass/components/_banner.scss */
+/* line 292, ../sass/components/_banner.scss */
 .not-full-2 {
   height: 400px;
 }

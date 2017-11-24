@@ -7,10 +7,11 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}">
 
-    <link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="{{ site.baseurl }}/favicon.ico?" rel="shortcut icon" type="image/x-icon" />
     <meta name="author" content="Tyler Brooks" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/style.css" />
 
+    {% if page.title == 'Tyler Brooks Designs' %}
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Tyler Brooks Graphic Design" />
@@ -18,6 +19,7 @@
     <meta property="og:url" content="http://tylerbrooksdesigns.com/" />
     <meta property="og:site_name" content="Tyler Brooks Designs" />
     <meta property="og:image" content="http://www.tylerbrooksdesigns.com/img/fb-og/tylerbrooks.jpg" />
+    {% endif %}
 
     <!--[if lt IE 9]>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
