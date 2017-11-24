@@ -37,14 +37,15 @@
             <div class="text-table">
                 <div class="intro-middle fadeInDown">
                     <h1 class="small ">TYLER BROOKS GRAPHIC DESIGN</h1>
-                    <p>Hi, I am Tyler a Web and Graphic Designer with a passion for creating first-class icons and digital experiences. This website has evolved from a personal portfolio to a website with a collection of free downloadable design resources. <strong>Freebies: 6,625+ Downloads</strong><!-- I have been in the design field for almost 2 years, creating web pages and a range of designs.  --></p>
+                    <p>Hi, I am Tyler a Web Designer/Developer with a passion for creating first-class icons and digital experiences. This website has evolved from a personal portfolio to a website with a collection of free downloadable design resources. <strong>Freebies: 6,625+ Downloads</strong></p>
                     <p class="responsive-text">I have a strong passion for new technology, coding standards, doing things right, and creating natural user experiences. These are important features to many designers and I strive to bring each aspect to every project I work on.</p>
+                    <!-- <p class="responsive-text small"><small>This site is built using the static site generater Jekyll and hosted via Github Pages.</small></p> -->
                     </p>
                 </div>
             </div>
         </div>
 
-        {% for item in site.data.locale.homepage.projects %}
+        {% for item in site.data.locale.homepage.projects limit:10 %}
         <div class="work-item {{ item.animation }}" data-width="{{ item.data_width }}" data-height="{{ item.data_height }}">
             <div class="work-header">
                 <h3 class="small">{{ item.title }}</h3>
