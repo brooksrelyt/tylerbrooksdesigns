@@ -1,0 +1,174 @@
+/* -------------------------------- 
+
+Forms
+
+-------------------------------- */
+.form {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 90%;
+
+    &::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    fieldset {
+        margin: 24px 0;
+        border: 0 none;
+    }
+
+    legend {
+        border-bottom: 1px solid #e1e1e1;
+        color: #2985f4;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    div {
+        margin: 20px 0;
+        position: relative;
+    }
+
+    .label {
+        color: #b0b0b0;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        display: block;
+    }
+}
+
+.form input, .form textarea, .form select, .form label {
+    box-sizing: border-box;
+    color: #757575;
+    font-size: 16px;
+    line-height: 28px;
+}
+.form input[type="text"], .form input[type="email"], .form input[type="tel"], .form textarea, .form select, .form legend {
+    -moz-appearance: none;
+    display: block;
+    width: 100%;
+}
+.form input[type="text"], .form input[type="email"], .form input[type="tel"], .form textarea, .form select {
+    background-color: #ffffff;
+    border: 1px solid #c7c6c7;
+    border-radius: 0.25em;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08) inset;
+    padding: 12px;
+}
+.form input[type="text"]:focus, .form input[type="email"]:focus, .form input[type="tel"]:focus, .form textarea:focus, .form select:focus {
+    border-color: #2985f4;
+    box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
+    outline: medium none;
+}
+.form .select {
+    position: relative;
+}
+.form .select::after {
+    background: url("../img/kitchen/arrow.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    height: 16px;
+    margin-top: -8px;
+    pointer-events: none;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    width: 16px;
+    z-index: 1;
+}
+.form select {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+.form .form-list {
+    margin-top: 16px;
+}
+.form .form-list::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.form .form-list li {
+    -moz-user-select: none;
+    display: inline-block;
+    float: left;
+    margin: 0 26px 16px 0;
+    position: relative;
+    width: 200px;
+}
+.form input[type="radio"] {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.form input[type="radio"] + label {
+    line-height: 32px;
+    padding-left: 50px;
+}
+.form textarea {
+    min-height: 200px;
+    overflow: auto;
+    resize: vertical;
+}
+.form input[type="submit"] {
+    -moz-appearance: none;
+    -moz-osx-font-smoothing: grayscale;
+    background: none repeat scroll 0 0 #2985f4;
+    border: medium none;
+    border-radius: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    float: right;
+    font-weight: normal;
+    padding: 6px 24px;
+}
+.form input[type="submit"]:focus {
+    outline: medium none;
+}
+.form input[type="submit"]:active {
+    transform: scale(0.9);
+}
+.form [required] {
+    background: url("../img/kitchen/required.png") no-repeat scroll right top rgba(0, 0, 0, 0);
+}
+
+@media only screen and (min-width: 600px) {
+.form div {
+    margin: 32px 0;
+}
+.form legend + div {
+    margin-top: 20px;
+}
+.form input[type="text"], .form input[type="email"], .form input[type="tel"], .form textarea, .form select {
+    padding: 16px;
+}
+}
+.form-icons {
+    display: inline-block;
+    height: 32px;
+    margin-left: 25px;
+}
+.form .chrome {
+    background: rgba(0, 0, 0, 0) url("../img/kitchen/chrome.png") no-repeat scroll 0 0;
+}
+.form .explorer {
+    background: rgba(0, 0, 0, 0) url("../img/kitchen/explorer.png") no-repeat scroll 0 0;
+}
+.form .firefox {
+    background: rgba(0, 0, 0, 0) url("../img/kitchen/firefox.png") no-repeat scroll 0 0;
+}
+.form .safari {
+    background: rgba(0, 0, 0, 0) url("../img/kitchen/safari.png") no-repeat scroll 0 0;
+}
+.form .opera {
+    background: rgba(0, 0, 0, 0) url("../img/kitchen/opera.png") no-repeat scroll 0 0;
+}

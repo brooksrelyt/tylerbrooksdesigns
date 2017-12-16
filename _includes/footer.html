@@ -12,7 +12,7 @@
             <div class="col-lg-6">
                 <div class="footer-menu">
                     <ul class="footer-menu-inner">
-                        <li><a href="{{ site.baseurl }}" title="View projects"><span>01.</span> Showcase</a></li>
+                        <li><a href="{{ site.baseurl }}/" title="View projects"><span>01.</span> Showcase</a></li>
                         <li><a href="{{ site.baseurl }}/about/" title="About Me"><span>02.</span> About</a></li>
                         <li><a href="{{ site.baseurl }}/contact/" title="Contact Me"><span>03.</span> Contact</a></li>
                     </ul>
@@ -29,19 +29,7 @@
             </div>
         </div>
 
-
-
-        {% if page.title == 'Tyler Brooks Designs' %}
-        <section class="sharing-container">
-            <div class="sharing-container-inner">
-                <div class="fb-share-button" data-href="http://tylerbrooksdesigns.com/" data-layout="button_count"></div>
-                <div class="g-plus plus" data-action="share" data-annotation="bubble" data-href="http://tylerbrooksdesigns.com/"> </div>
-                <div><a class="twitter-share-button" data-hashtags="tylerbrooksdesigns" data-text="FREE Design Resources / Portfolio" data-url="http://goo.gl/UCmeXP" data-via="brooksrelyt" href="https://twitter.com/share">Tweet</a></div>
-            </div>
-        </section>
-        {% endif %}
-
-
+        {% include /sections/footer-share.html %}
         
     </footer>
 

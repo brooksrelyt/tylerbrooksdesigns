@@ -49,10 +49,10 @@ h6 {
 .subheader {
     line-height: 1.4;
     color: #b0b0b0;
-/*font-weight: normal;*/
-font-weight: 300;
-margin-top: 0.2rem;
-margin-bottom: 0.5rem; 
+    /*font-weight: normal;*/
+    font-weight: 300;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem; 
 }
 
 small {
@@ -71,7 +71,7 @@ small {
 }
 
 // Text Transforms
-.uppercase {text-transform: uppercase;}
+.uppercase { text-transform: uppercase !important; }
 
 // Text Colors
 .white { color: $white; }
@@ -93,4 +93,32 @@ small {
 .large {
     font-size: 56px !important;
     font-weight: 300;
+}
+
+// Blockquotes
+blockquote {
+    margin: 0 0 1.25em;
+    padding: 0.5625em 1.25em 0 1.1875em;
+    border-left: 3px solid #2985f4;
+    line-height: 1.6;
+    font-weight: 300; 
+
+    p {
+        line-height: 1.6;
+        font-weight: 300; 
+    }
+
+    cite {
+        display: block;
+        font-size: 0.8125em;
+        color: #b0b0b0; 
+
+        &:before {
+            content: "\2014 \0020"; 
+        }
+
+        a, a:visited {
+            color: #555555; 
+        }
+    }
 }

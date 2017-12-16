@@ -1,0 +1,130 @@
+/* -------------------------------- 
+
+Grid Folio Homepage/Projects style
+
+-------------------------------- */
+ul.gallery-grid {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    display: block;
+
+    li {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: 25%; /* Fallback */
+        width: -webkit-calc(100% / 2);
+        width: -moz-calc(100% / 2);
+        width: -ms-calc(100% / 2);
+        width: calc(100% / 2);
+        display: block;
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    &::after {
+        clear: both; 
+    }
+}
+
+.arrow-down {
+    margin: 0 auto;
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 30px solid #000000;
+}
+
+
+.project-container {
+    margin: 0;
+    padding: 0;
+    display: block;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.project-container-fitpotato {
+    background:#2c3e50;
+}
+
+.info-container {
+    padding-top: 75px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+    max-width: 850px;
+
+    h2 {
+        text-transform: uppercase;
+        /*font-family: Georgia, serif;*/
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 32px;
+        color: $cool_blue;
+    }
+
+    p {
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+}
+
+.info-container-img {
+    padding-top: 75px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+.about-intro {
+  margin-bottom: 20px;
+  font-size: 20px !important;
+    font-weight: 200;
+    line-height: 32px !important;
+}
+
+.project-caption {
+    padding-top: 75px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+    max-width: 850px;
+
+    h2 {
+        text-transform: uppercase;
+        /*font-family: Georgia, serif;*/
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 32px;
+        color: $cool_blue;
+    }
+
+    p {
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 32px;
+        color: #94a4a5;
+    }
+}
