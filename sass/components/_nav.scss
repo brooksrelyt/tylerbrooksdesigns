@@ -118,6 +118,22 @@ a.brand {
     background-color: #34495e;
     transition: height 0.3s ease-in-out 0s;
 
+    @include breakpoint(screen-lg) {
+        width: 50%;
+        padding-left: 30px;
+    }
+    
+    @include breakpoint(screen-md) {
+        width: 65%;
+        padding-left: 30px;
+    }
+
+    @include breakpoint(screen-sm) {
+        width: 100%;
+        padding-left: 0px;
+        right: 0;
+    }
+
     p {
         color: #fff;
         font-weight: 100;
@@ -131,6 +147,11 @@ a.brand {
         padding-left: 0px;
         width: 100%;
 
+        @include breakpoint(screen-md) {
+            padding-top: 85px;
+            text-align: center;
+        }
+
         li {
             a {
                 display: block;
@@ -142,7 +163,13 @@ a.brand {
                 font-size: 2.5em;
                 font-weight: 100;
                 transition: background 0s ease 0s, all 500ms ease 0s;
-                width: 500px;
+                // max-width: 500px;
+                position: relative;
+
+                @include breakpoint(screen-lg) {
+                    font-size: 34px;
+                    padding: 10px 30px;
+                }
 
                 &:hover {
                     text-transform: uppercase;
@@ -166,6 +193,10 @@ a.brand {
     font-size: 0.8em;
     padding: 10px 80px;
     width: 400px;
+
+    @include breakpoint(screen-lg) {
+        padding: 10px 30px;
+    }
 
     .info {
         display: block;
