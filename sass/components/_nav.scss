@@ -87,7 +87,7 @@ a.brand {
 .header {
     color: #fff;
     height: 55px;
-    z-index: 15;
+    z-index: 10000;
     left: 0;
     top: 0;
     width: 100%;
@@ -149,6 +149,8 @@ a.brand {
 
         @include breakpoint(screen-md) {
             padding-top: 85px;
+        }
+        @include breakpoint(screen-sm) {
             text-align: center;
         }
 
@@ -165,10 +167,15 @@ a.brand {
                 transition: background 0s ease 0s, all 500ms ease 0s;
                 // max-width: 500px;
                 position: relative;
+                width: max-content;
 
                 @include breakpoint(screen-lg) {
                     font-size: 34px;
                     padding: 10px 30px;
+                }
+
+                @include breakpoint(screen-sm) {
+                    margin: 0 auto;
                 }
 
                 &:hover {
@@ -192,10 +199,17 @@ a.brand {
     color: #ecf0f1;
     font-size: 0.8em;
     padding: 10px 80px;
-    width: 400px;
+    // width: 400px;
+    width: max-content !important;
 
     @include breakpoint(screen-lg) {
         padding: 10px 30px;
+    }
+
+    @include breakpoint(screen-sm) {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .info {

@@ -879,6 +879,10 @@ Animations
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
+
+    @include breakpoint(screen-sm) {
+        animation-duration: 0s;
+    }
 }
 @keyframes bounce {
 0%, 100%, 20%, 50%, 80% {
