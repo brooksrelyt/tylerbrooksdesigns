@@ -22,6 +22,10 @@ ul.gallery-grid {
         width: calc(100% / 2);
         display: block;
 
+        @include breakpoint(screen-sm) {
+            width: 100%;
+        }
+
         img {
             display: block;
             max-width: 100%;

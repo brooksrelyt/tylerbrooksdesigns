@@ -12940,14 +12940,32 @@ blockquote cite a, blockquote cite a:visited {
   -ms-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
+@media screen and (max-width: 768px) {
+  /* line 4, ../sass/util/_animations.scss */
+  .come-in {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
 
-/* line 21, ../sass/util/_animations.scss */
+/* line 28, ../sass/util/_animations.scss */
 .come-in:nth-child(odd) {
   -webkit-animation-duration: 0.6s;
   /* So they look staggered */
   -moz-animation-duration: 0.6s;
   -ms-animation-duration: 0.6s;
   animation-duration: 0.6s;
+}
+@media screen and (max-width: 768px) {
+  /* line 28, ../sass/util/_animations.scss */
+  .come-in:nth-child(odd) {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
 }
 
 @-webkit-keyframes come-in {
@@ -14139,17 +14157,23 @@ ul.gallery-grid li {
   width: calc(100% / 2);
   display: block;
 }
-/* line 25, ../sass/pages/_projects.scss */
+@media screen and (max-width: 660px) {
+  /* line 14, ../sass/pages/_projects.scss */
+  ul.gallery-grid li {
+    width: 100%;
+  }
+}
+/* line 29, ../sass/pages/_projects.scss */
 ul.gallery-grid li img {
   display: block;
   max-width: 100%;
 }
-/* line 31, ../sass/pages/_projects.scss */
+/* line 35, ../sass/pages/_projects.scss */
 ul.gallery-grid::after {
   clear: both;
 }
 
-/* line 36, ../sass/pages/_projects.scss */
+/* line 40, ../sass/pages/_projects.scss */
 .arrow-down {
   margin: 0 auto;
   width: 0;
@@ -14159,24 +14183,24 @@ ul.gallery-grid::after {
   border-top: 30px solid #000000;
 }
 
-/* line 46, ../sass/pages/_projects.scss */
+/* line 50, ../sass/pages/_projects.scss */
 .project-container {
   margin: 0;
   padding: 0;
   display: block;
 }
-/* line 51, ../sass/pages/_projects.scss */
+/* line 55, ../sass/pages/_projects.scss */
 .project-container img {
   width: 100%;
   display: block;
 }
 
-/* line 57, ../sass/pages/_projects.scss */
+/* line 61, ../sass/pages/_projects.scss */
 .project-container-fitpotato {
   background: #2c3e50;
 }
 
-/* line 61, ../sass/pages/_projects.scss */
+/* line 65, ../sass/pages/_projects.scss */
 .info-container {
   padding-top: 75px;
   padding-left: 5px;
@@ -14185,7 +14209,7 @@ ul.gallery-grid::after {
   margin: 0 auto;
   max-width: 850px;
 }
-/* line 69, ../sass/pages/_projects.scss */
+/* line 73, ../sass/pages/_projects.scss */
 .info-container h2 {
   text-transform: uppercase;
   /*font-family: Georgia, serif;*/
@@ -14195,7 +14219,7 @@ ul.gallery-grid::after {
   line-height: 32px;
   color: #2985f4;
 }
-/* line 79, ../sass/pages/_projects.scss */
+/* line 83, ../sass/pages/_projects.scss */
 .info-container p {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
@@ -14204,7 +14228,7 @@ ul.gallery-grid::after {
   line-height: 24px;
 }
 
-/* line 88, ../sass/pages/_projects.scss */
+/* line 92, ../sass/pages/_projects.scss */
 .info-container-img {
   padding-top: 75px;
   padding-left: 5px;
@@ -14214,7 +14238,7 @@ ul.gallery-grid::after {
   max-width: 850px;
 }
 
-/* line 97, ../sass/pages/_projects.scss */
+/* line 101, ../sass/pages/_projects.scss */
 .about-intro {
   margin-bottom: 20px;
   font-size: 20px !important;
@@ -14222,7 +14246,7 @@ ul.gallery-grid::after {
   line-height: 32px !important;
 }
 
-/* line 104, ../sass/pages/_projects.scss */
+/* line 108, ../sass/pages/_projects.scss */
 .project-caption {
   padding-top: 75px;
   padding-left: 5px;
@@ -14231,7 +14255,7 @@ ul.gallery-grid::after {
   margin: 0 auto;
   max-width: 850px;
 }
-/* line 112, ../sass/pages/_projects.scss */
+/* line 116, ../sass/pages/_projects.scss */
 .project-caption h2 {
   text-transform: uppercase;
   /*font-family: Georgia, serif;*/
@@ -14241,7 +14265,7 @@ ul.gallery-grid::after {
   line-height: 32px;
   color: #2985f4;
 }
-/* line 122, ../sass/pages/_projects.scss */
+/* line 126, ../sass/pages/_projects.scss */
 .project-caption p {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
@@ -14251,42 +14275,42 @@ ul.gallery-grid::after {
   color: #94a4a5;
 }
 
-/* line 132, ../sass/pages/_projects.scss */
+/* line 136, ../sass/pages/_projects.scss */
 .bottom-bar {
   background: #f1f1f1 none repeat scroll 0 0;
   height: 65px;
   position: relative;
 }
-/* line 137, ../sass/pages/_projects.scss */
+/* line 141, ../sass/pages/_projects.scss */
 .bottom-bar a.bar-icon {
   color: #e1e1e1;
   line-height: 65px;
   margin: 0 1.5em;
   font-size: 1.5em;
 }
-/* line 143, ../sass/pages/_projects.scss */
+/* line 147, ../sass/pages/_projects.scss */
 .bottom-bar a.bar-icon.icon-left {
   left: 50%;
   position: absolute;
 }
-/* line 148, ../sass/pages/_projects.scss */
+/* line 152, ../sass/pages/_projects.scss */
 .bottom-bar a.bar-icon.icon-center {
   left: 50%;
   position: absolute;
   margin: 0 auto;
   margin-left: -0.5em;
 }
-/* line 155, ../sass/pages/_projects.scss */
+/* line 159, ../sass/pages/_projects.scss */
 .bottom-bar a.bar-icon.icon-right {
   right: 0;
   position: absolute;
 }
-/* line 160, ../sass/pages/_projects.scss */
+/* line 164, ../sass/pages/_projects.scss */
 .bottom-bar a.bar-icon:hover, .bottom-bar a.bar-icon:focus {
   color: #fff;
 }
 
-/* line 167, ../sass/pages/_projects.scss */
+/* line 171, ../sass/pages/_projects.scss */
 section.wireframes {
   margin: 0 auto;
   width: 100%;
@@ -14294,20 +14318,20 @@ section.wireframes {
   padding: 75px 0;
   background-color: #fafafa;
 }
-/* line 174, ../sass/pages/_projects.scss */
+/* line 178, ../sass/pages/_projects.scss */
 section.wireframes .wire-container {
   max-width: 1200px;
   margin: 0 auto;
   display: block;
   overflow: hidden;
 }
-/* line 181, ../sass/pages/_projects.scss */
+/* line 185, ../sass/pages/_projects.scss */
 section.wireframes .wire-inner .wired img {
   width: 100%;
   display: block;
 }
 
-/* line 189, ../sass/pages/_projects.scss */
+/* line 193, ../sass/pages/_projects.scss */
 section.wireframes .wire-container
 section.wireframes .wire-container .wire-inner .wired-text {
   position: absolute;
@@ -14315,7 +14339,7 @@ section.wireframes .wire-container .wire-inner .wired-text {
   margin-top: -400px;
 }
 
-/* line 197, ../sass/pages/_projects.scss */
+/* line 201, ../sass/pages/_projects.scss */
 section.wireframes .wire-container .wire-inner .wired-text h2 {
   font-size: 24px;
   font-weight: 400;
@@ -14323,7 +14347,7 @@ section.wireframes .wire-container .wire-inner .wired-text h2 {
   text-transform: uppercase;
 }
 
-/* line 203, ../sass/pages/_projects.scss */
+/* line 207, ../sass/pages/_projects.scss */
 section.wireframes .wire-container .wire-inner .wired-text p {
   font-size: 18px;
   font-weight: 400;
@@ -14331,7 +14355,7 @@ section.wireframes .wire-container .wire-inner .wired-text p {
   color: #b6b6b6;
 }
 
-/* line 210, ../sass/pages/_projects.scss */
+/* line 214, ../sass/pages/_projects.scss */
 section.wireframes .wire-container .wire-inner .wired-text span.wired-rectangle {
   width: 675px;
   height: 120px;
