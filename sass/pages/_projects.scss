@@ -128,3 +128,93 @@ ul.gallery-grid {
         color: #94a4a5;
     }
 }
+
+.bottom-bar {
+    background: #f1f1f1 none repeat scroll 0 0;
+    height: 65px;
+    position: relative;
+
+    a.bar-icon {
+        color: #e1e1e1;
+        line-height: 65px;
+        margin: 0 1.5em;
+        font-size: 1.5em;
+
+        &.icon-left {
+            left: 50%;
+            position: absolute;
+        }
+
+        &.icon-center {
+            left: 50%;
+            position: absolute;
+            margin: 0 auto;
+            margin-left: -0.5em;
+        }
+
+        &.icon-right {
+            right: 0;
+            position: absolute;
+        }
+
+        &:hover, &:focus {
+            color: #fff;
+        }
+    }
+}
+
+// Aviatrix App - Wirefram layout
+section.wireframes {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    padding: 75px 0;
+    background-color: #fafafa;
+
+    .wire-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: block;
+        overflow: hidden;
+    }
+
+    .wire-inner .wired img {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+
+section.wireframes .wire-container 
+
+section.wireframes .wire-container .wire-inner .wired-text {
+  position: absolute;
+  max-width: 600px;
+  margin-top: -400px; 
+}
+
+section.wireframes .wire-container .wire-inner .wired-text h2 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+section.wireframes .wire-container .wire-inner .wired-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #b6b6b6;
+}
+
+section.wireframes .wire-container .wire-inner .wired-text span.wired-rectangle {
+  width: 675px;
+  height: 120px;
+  background: #39c6f4;
+  opacity: 0.2;
+  display: block;
+  position: absolute;
+  margin-top: -125px; 
+  margin-left: -50px;
+}
+
