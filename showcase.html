@@ -1,0 +1,23 @@
+---
+layout: showcase
+title: 'Project Showcase: Tyler Brooks Designs'
+description: 'A list of projects - freelance and otherwise.'
+permalink: '/projects/'
+---
+
+    {% for item in site.data.locale.homepage.projects limit:10 %}
+    <div class="work-item {{ item.animation }}" data-width="{{ item.data_width }}" data-height="{{ item.data_height }}">
+        <div class="work-header">
+            <h3 class="small">{{ item.title }}</h3>
+            {{ item.tags }}
+        </div>
+        <div class="work-project">
+            <a href="{{ site.baseurl }}{{ item.link }}">
+                <div style="background-image: url('{{ site.baseurl }}{{ item.img }}');"></div>
+            </a>
+        </div>
+        <div class="work-footer">
+            <span>{{ item.origin }}</span>
+        </div>
+    </div>
+    {% endfor %}
