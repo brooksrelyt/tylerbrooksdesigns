@@ -8,7 +8,16 @@ homepage:
       img: '/img/homepage/newest-icons.jpg'
       data_width: '1280'
       data_height: '1400'
-      animation: 'fadeInDown'
+      animation: 'module'
+    -
+      title: 'BoatUS Foundation Redesign'
+      tags: '<span>HTML/CSS</span><span>Web Design</span><span>UI/UX Design</span>'
+      origin: 'BOATUS.ORG'
+      link: '/projects/boatus-foundation/'
+      img: '/img/splash/grid2.jpg'
+      data_width: '1280'
+      data_height: '1400'
+      animation: 'module'
     -
       title: 'Free Office Icon Set'
       tags: '<span>Illustrator</span><span>Icon Design</span><span>Web Design</span>'
@@ -43,7 +52,7 @@ homepage:
       link: '/projects/social-media-icons/'
       img: '/img/homepage/social.jpg'
       data_width: '1280'
-      data_height: '700'
+      data_height: '1400'
       animation: 'module'
     -
       title: 'Free Minimal Browser'

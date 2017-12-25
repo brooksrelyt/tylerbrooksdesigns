@@ -1,3 +1,4 @@
+	{% if page.title != 'BoatUS Foundation Redesign: TylerBrooksDesigns' %}
 	<div class="not-full bg parallax" style="background-image:url('{{ site.baseurl }}{{ page.banner }}');" data-img-width="1450" data-img-height="683" data-diff="100">
         <div class="bg-content">
             <div class="bg-inner-content">
@@ -5,5 +6,18 @@
             </div>
         </div>
     </div>
+    {% endif %}
 
     <!-- <div class="center-button"><a href="#work" class="down-arrow-btn"><span class="arrow-work"></span></a></div> -->
+
+    {% if page.title == 'BoatUS Foundation Redesign: TylerBrooksDesigns' %}
+	<div class="hero-wrapper">
+	    <div id="hero">
+	        <video id="video" loop="loop" preload="" autoplay="autoplay">
+                <source type="video/mp4" src="http://www.boatusfoundation.org/video/new-loop.mp4">
+                <source type="video/webm" src="http://www.boatusfoundation.org/video/new-loop.webm">
+            </video>
+	        <div class="small-banner" style="background-image:url('{{ site.baseurl }}/img/small-banner.jpg');"></div>
+	    </div>
+	</div>
+	{% endif %}
