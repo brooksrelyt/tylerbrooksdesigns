@@ -39,6 +39,12 @@
     <![endif]-->    
 
     <script src="/js/vendor/modernizr.js"></script>
+
+    <script>
+        var host = "brooksrelyt.github.io";
+        if ((host == window.location.host) && (window.location.protocol != "https:"))
+            window.location.protocol = "https";
+    </script>
 </head>
 
 <body>
