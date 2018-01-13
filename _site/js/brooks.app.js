@@ -1,11 +1,4 @@
-
 $(document).ready (function () {
-
-    require('http').createServer((req, res) => {
-        res.end('▲ Hello World')
-    }).listen(process.env.PORT)
-
-    
 	if("ontouchstart" in window){
     document.documentElement.className = document.documentElement.className + " touch";
 }
